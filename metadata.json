@@ -1,0 +1,6 @@
+{
+  "name": "Sumit Sinha Studio",
+  "description": "Custom high-performance static websites and cognitive AI agents crafted by Sumit Sinha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
