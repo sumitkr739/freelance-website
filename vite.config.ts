@@ -5,7 +5,9 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: process.env.NODE_ENV === 'production' ? '/freelance-website/' : './',
+    // Netlify deploys to site root, so assets should use `/` base by default.
+    // If you ever deploy under a sub-path, set VITE_BASE_URL accordingly.
+    base: process.env.VITE_BASE_URL || '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
